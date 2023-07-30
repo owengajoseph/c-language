@@ -1,4 +1,6 @@
 #include<stdio.h>
+// c program to check 
+// one negative num and more than on pos num
 
 int main(){
     int arr[]={1,-2,5};
