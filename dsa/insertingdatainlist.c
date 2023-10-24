@@ -13,7 +13,12 @@ void insert(int x)
     struct node *temp = malloc(sizeof(struct node));
     temp->data = x;
     temp->next = NULL;
-    head = temp;
+    head=temp;
+
+
+    head->next = temp;
+
+    return;
 }
 
 void print()
@@ -21,22 +26,28 @@ void print()
     struct node *temp = head;
 
     printf("list is");
-    while (temp != NULL)
+    while (temp->next != NULL)
     {
         printf("%d", temp->data);
+        return;
     }
 }
 
 int main()
 {
     head = NULL;
-    printf("how many numbers");
     int n, i, x;
-    scanf("%d\n", &n);
+    printf("how many numbers");
+
+    scanf("%d", &n);
     printf("enter numbers");
-    for (i = 0; i <= n)
+    for (i = 0; i <= n; i++)
     {
+
         scanf("%d", &x);
+        insert(x);
+         print();
+        
     }
-    insert(x);
+    print();
 }

@@ -7,7 +7,7 @@ struct node
     struct node *link;
 };
 //trevers func
-void count_of_node(struct node *head)
+/*void count_of_node(struct node *head)
 {
     int count = 0;
     if (head == NULL){
@@ -23,7 +23,7 @@ void count_of_node(struct node *head)
         ptr = ptr->link;
     }
     printf("the number of list is %d", count);
-}
+}*/
 
 // the main func 
 struct node *head;
@@ -52,7 +52,9 @@ int main()
     secondnode->link = secondnode;
 
     // head->link stores the address of secondnode
+    
     head= firstnode;
+    printf("the value is %d",head->data);
 
-    count_of_node(head);
+    //count_of_node(head);
 }
