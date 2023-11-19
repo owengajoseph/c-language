@@ -7,19 +7,7 @@ struct node
     struct node *next;
 };
 
-void insert(int x)
-{
-    // function to insert values into the nodes
-    struct node *temp = malloc(sizeof(struct node));
-    temp->data = x;
-    temp->next = NULL;
-    head=temp;
 
-
-    head->next = temp;
-
-    return;
-}
 
 void print()
 {
