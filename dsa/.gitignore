@@ -1,6 +1,8 @@
 *.exe
 obj/
 bin/
-.*cbp
-.*layout
+*.cbp
+*.layout
+*.o
+
 
