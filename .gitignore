@@ -1,8 +1,8 @@
-*.exe
+.*exe
 obj/
 bin/
-*.cbp
-*.layout
-*.o
+.*cbp
+.*layout
+.*o
 
 
