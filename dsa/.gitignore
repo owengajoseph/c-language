@@ -1,8 +1,0 @@
-*.exe
-obj/
-bin/
-*.cbp
-*.layout
-*.o
-
-
